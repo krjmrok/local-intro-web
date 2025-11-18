@@ -8,7 +8,9 @@ body {
 
 .container {
     margin: 0 auto;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .btn {
@@ -29,12 +31,11 @@ header {
 }
 
 .header-left {
-    float:left;
-    margin-top: 10px;
+    display: flex;
 }
 
 .Home {
-    display: block;
+    display: flex;
     width: 45px;
     height: 45px;
     line-height: 65px;
@@ -46,27 +47,30 @@ header {
 }
 
 .Home img {
-    width: 100%;
-    height: 100%;
+    flex: auto;
 }
 
 .header-menu {
-    display: block;
+    display: flex;
     list-style: none;
-    float: left;
 }
 
 .header-menu li {
-    float: left;
     padding: 20px 15px;
 }
 
 .header-right {
-    float: right;
-    margin-top: 10px;
+    display: flex;
+    padding: 0 0 10px 20px;
+}
+
+.heaer-right a {
+    text-decoration: none;
+    text-align: center;
 }
 
 .login {
+    height: 45px;
     font-size: 24px;
     color: #E2E8F0;
     line-height: 65px;
@@ -93,6 +97,7 @@ header {
 }
 
 h1 {
+    margin: 0 auto;
     font-size: 48px;
     color: #E2E8F0;
 }
